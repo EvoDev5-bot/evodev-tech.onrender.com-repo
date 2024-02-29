@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="top-bar.css">
+    <title>Evo Dev Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <title>About</title>
+</head>
+
+<body>
+
+
+    <div id="main">
+        <div id="top-bar">
+
+            <p id="logo">
+                Evo Dev
+            </p>
+
+            <div id="empty"></div>
+
+            <button id="projects" class="top-bar-link" onclick="goTo('projects')">
+                PROJECTS
+            </button>
+
+            <button id="diary" class="top-bar-link" onclick="goTo('diary')">
+                DIARY
+            </button>
+
+            <button id="about" class="top-bar-link" onclick="goTo('about')">
+                ABOUT
+            </button>
+
+            <button id="home" class="top-bar-link" onclick="goTo('index')">
+                HOME
+            </button>
+
+
+            <button id="white-btn" class="menu-btn" onclick="switchMenu()">
+
+            </button>
+
+
+
+
+
+
+        </div>
+        <div id="links">
+
+            <div id="home-in-links" class="links-link" onclick="goTo('index')">HOME</div>
+            <div id="about-in-links" class="links-link" onclick="goTo('about')">ABOUT</div>
+            <div id="diary-in-links" class="links-link" onclick="goTo('diary')">DIARY</div>
+            <div id="projects-in-links" class="links-link" onclick="goTo('projects')">PROJECTS</div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="top-bar.js"></script>
+
+</html>

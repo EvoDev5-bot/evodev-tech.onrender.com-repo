@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body,
+html {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 900px;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-bar {
+    background-color: #000000;
+    width: 1100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    position: fixed;
+}
+
+#empty {
+    width: 380px;
+    height: 100px;
+}
+
+#logo {
+    background: linear-gradient(to left, #00FF00 60%, #008cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 4rem;
+    font-family: "Alex Brush";
+    line-height: 100px;
+    width: 230px;
+}
+
+.top-bar-link {
+    background-color: black;
+    width: 150px;
+    border: none;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Karla';
+    font-size: 1.8rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#home {
+    margin: 0px;
+}
+
+#projects {
+    width: 200px;
+}
+
+.menu-btn {
+    height: 0;
+    width: 0;
+}
+
+#links {
+    width: 0;
+    height: 0;
+}
+
+#row2 {
+    margin-top: 150px;
+    width: 90%;
+    height: 90vh;
+    border: 5px solid white;
+    padding: 50px;
+    font-size: 2rem;
+    font-family: Karla;
+}
+
+#black {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+
+@media (max-width:1120px) {
+
+    .top-bar-link,
+    #empty {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
+    #projects {
+        width: 0;
+    }
+
+    #top-bar,
+    #main {
+        width: 600px;
+    }
+
+    .menu-btn {
+        height: 90%;
+        width: 90px;
+        border: 2px solid white;
+        background-position: 0%;
+        background-size: contain;
+        background-color: black;
+        background-image: url(./menu.png);
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 230px;
+        cursor: pointer;
+    }
+
+    #links {
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        font-family: Karla;
+        font-size: 2rem;
+        margin-top: 100px;
+        position: fixed;
+        margin-left: 120px;
+    }
+
+    .links-link {
+        margin-bottom: 10px;
+        cursor: default;
+        color: black
+    }
+
+    .links-link:hover {
+        background-color: lightgrey;
+    }
+
+}
+
+@media (max-width:610px) {
+    #main {
+        width: 400px;
+    }
+
+    .top-bar-link,
+    #empty {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
+    #projects {
+        width: 0;
+    }
+
+    #top-bar {
+        width: 400px;
+    }
+
+
+    .menu-btn {
+        height: 90%;
+        width: 90px;
+        border: 2px solid white;
+        background-position: 0%;
+        background-size: contain;
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 0px;
+        cursor: pointer;
+    }
+
+
+    #links {
+        left: -100px;
+    }
+}
+
+@media (max-width:406px) {
+    #top-bar {
+        width: 300px;
+    }
+
+    #main {
+        width: 300px;
+    }
+
+    #logo {
+        width: 200px;
+        font-size: 2.5rem;
+    }
+
+    .menu-btn {
+        margin-left: 0;
+        width: 70px;
+        height: 70%;
+    }
+
+    #links {
+        left: -10px;
+    }
+}
